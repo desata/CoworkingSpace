@@ -16,3 +16,26 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar-brand {
+margin-right: 0;
+padding:0 1em;
+}
+
+.navbar-nav {
+align-items: center;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 0 1em;
+    color: dimgrey;
+}
+
+.dropdown-menu .dropdown-item {
+    color: dimgrey;
+}
+
+.footer {
+    background-color: #607491;
+    color: white;
+}

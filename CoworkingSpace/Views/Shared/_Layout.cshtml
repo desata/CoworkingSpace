@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">            
-                <partial name="_LoginPartial" />
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <partial name="_LoginPartial" />
         </nav>
-                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-grey border-bottom bottom-shadow mb-3">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -23,28 +23,38 @@
                     <ul class="navbar-nav mx-auto align-items-center">
                         <li>
                             <a class="navbar-brand d-lg-none" href="/">
-                                <img src="/images/logo/logo.png" alt="destiny_logo" class="mx-auto d-block" width="128" height="128">
+                                <img src="https://www.dropbox.com/s/9xav3sosq81wysa/logo.png?raw=1" alt="destiny_logo" class="mx-auto d-block" width="128" height="128">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Workspace Solution
+                            </a>
+                            <ul class="dropdown-menu border-0 ">
+                                <li><a class="dropdown-item" href="#">Coworking space</a></li>
+                                <li><a class="dropdown-item" href="#">Meeting rooms</a></li>
+                                <li><a class="dropdown-item" href="#">Event space</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a class="navbar-brand d-none d-lg-block" href="/">
-                                <img src="/images/logo/logo.png" alt="destiny_logo" class="mx-auto d-block" width="256" height="256">
+                                <img src="https://www.dropbox.com/s/9xav3sosq81wysa/logo.png?raw=1" alt="destiny_logo" class="mx-auto d-block" width="200" height="200">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pricing" asp-action="Pricing">Pricing</a>
+                            <a class="nav-link" asp-area="" asp-controller="Prices" asp-action="Prices">Prices</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Contact">Contact</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                    </ul>
-                   
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Contact">Contact us</a>
+                        </li>
+                    </ul>                   
                 </div>
             </div>
         </nav>
@@ -54,12 +64,85 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - CoworkingSpace
+    <footer class="footer">
+        <!-- Grid container -->
+        <div class="container p-4 d-none d-lg-block">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/qiqfr5jftzj6ugd/1.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/mlrgvs311hnrr2b/7.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/rd01wqwoenr9g3i/6.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/306cb9o4s4u9nvx/5.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/fcd2lha5m42179f/8.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://www.dropbox.com/s/dr7evpq37kt04uw/4.png?raw=1"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
         </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-1">
+            &copy; @DateTime.Now.Year DesStNy
+            <div>All images on this site are generated with Pixlr's AI Image Generator</div>
+        </div>
+        <!-- Copyright -->
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
