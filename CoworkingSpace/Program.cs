@@ -1,5 +1,5 @@
 using CoworkingSpace.Data;
-using Microsoft.AspNetCore.Identity;
+using CoworkingSpace.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoworkingSpace
@@ -12,12 +12,12 @@ namespace CoworkingSpace
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            builder.Services.AddDbContext<CoworkingSpaceDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddDefaultIdentity<Aperson>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<CoworkingSpaceDbContext>();
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();

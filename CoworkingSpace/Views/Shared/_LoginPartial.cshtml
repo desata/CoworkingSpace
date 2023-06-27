@@ -1,6 +1,7 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+﻿@using CoworkingSpace.Data.Models;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Aperson> SignInManager
+@inject UserManager<Aperson> UserManager
 
 <ul class="navbar-nav ms-auto">
 @if (SignInManager.IsSignedIn(User))

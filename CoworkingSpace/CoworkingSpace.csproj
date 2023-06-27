@@ -16,4 +16,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CoworkingSpace.Common\CoworkingSpace.Common.csproj" />
+    <ProjectReference Include="..\CoworkingSpace.Data.Models\CoworkingSpace.Data.Models.csproj" />
+    <ProjectReference Include="..\CoworkingSpace.Data\CoworkingSpace.Data.csproj" />
+  </ItemGroup>
+
 </Project>

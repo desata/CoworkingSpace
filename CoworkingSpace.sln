@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoworkingSpace", "CoworkingSpace\CoworkingSpace.csproj", "{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoworkingSpace", "CoworkingSpace\CoworkingSpace.csproj", "{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5C6273C8-235C-4990-A45A-34D152E62C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B96DF343-BA43-4F7D-BD51-7AFA3DBBB77C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoworkingSpace.Common", "CoworkingSpace.Common\CoworkingSpace.Common.csproj", "{F2143CF8-D415-4317-8C8A-2E87E3AEF5B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoworkingSpace.Data", "CoworkingSpace.Data\CoworkingSpace.Data.csproj", "{97873C94-F6D8-48DE-9D0D-7013DB8C9072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoworkingSpace.Data.Models", "CoworkingSpace.Data.Models\CoworkingSpace.Data.Models.csproj", "{70384621-2DA3-464A-A1DF-0D24A73F3F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,26 @@ Global
 		{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2143CF8-D415-4317-8C8A-2E87E3AEF5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2143CF8-D415-4317-8C8A-2E87E3AEF5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2143CF8-D415-4317-8C8A-2E87E3AEF5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2143CF8-D415-4317-8C8A-2E87E3AEF5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97873C94-F6D8-48DE-9D0D-7013DB8C9072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97873C94-F6D8-48DE-9D0D-7013DB8C9072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97873C94-F6D8-48DE-9D0D-7013DB8C9072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97873C94-F6D8-48DE-9D0D-7013DB8C9072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70384621-2DA3-464A-A1DF-0D24A73F3F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70384621-2DA3-464A-A1DF-0D24A73F3F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70384621-2DA3-464A-A1DF-0D24A73F3F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70384621-2DA3-464A-A1DF-0D24A73F3F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1735CE4-5174-4DAA-9CCB-65E24F22EE0E} = {B96DF343-BA43-4F7D-BD51-7AFA3DBBB77C}
+		{97873C94-F6D8-48DE-9D0D-7013DB8C9072} = {5C6273C8-235C-4990-A45A-34D152E62C85}
+		{70384621-2DA3-464A-A1DF-0D24A73F3F1B} = {5C6273C8-235C-4990-A45A-34D152E62C85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF92D976-CDB2-41A8-8492-EC9874CCA410}
