@@ -5,6 +5,11 @@ namespace CoworkingSpace.Data.Models
 {
     public class Space
     {
+        public Space()
+        {
+            this.Id = Guid.NewGuid();
+        }
+
         [Key]
         [Required]
         public Guid Id { get; set; }
@@ -19,6 +24,10 @@ namespace CoworkingSpace.Data.Models
         public string Description { get; set; } = null!;
 
         public string? ImgUrl { get; set; }
+
+        public DateTime RentedOn { get; set; }
+
+        public DateTime? RentedTo { get;}
 
         [Required]
         public int CathegoryId { get; set; }
@@ -38,9 +47,13 @@ namespace CoworkingSpace.Data.Models
         [Range(0.00, 10000.00)]
         public decimal PricePerMonth { get; set; }
 
-        public Guid? RenterId { get; set; }
+        public Guid? AdminId { get; set; }
 
-        public virtual Aperson? Renter { get; set; }
+        public virtual Admin Admin { get; set; }
+
+        public Guid RenterId { get; set; }
+
+        public virtual Aperson Renter { get; set; }
 
         public ICollection<Amenity> Amenities { get; set; } = new List<Amenity>();
     }

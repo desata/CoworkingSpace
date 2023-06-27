@@ -20,4 +20,8 @@
     <ProjectReference Include="..\CoworkingSpace.Data.Models\CoworkingSpace.Data.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

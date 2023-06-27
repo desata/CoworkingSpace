@@ -35,5 +35,11 @@ namespace CoworkingSpace.Common
             public const int URLMaxLength = 1000;
 
         }
+
+        public class Admin
+        {
+            public const int NameMinLength = 4;
+            public const int NameMaxLength = 50;
+        }
     }
 }
