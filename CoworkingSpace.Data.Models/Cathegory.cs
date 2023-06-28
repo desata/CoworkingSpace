@@ -7,7 +7,7 @@ namespace CoworkingSpace.Data.Models
     {
         [Key]
         [Required]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(NameMaxLength)]
