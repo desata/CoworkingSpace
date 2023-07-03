@@ -39,3 +39,14 @@ align-items: center;
     background-color: #607491;
     color: white;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #607491;
+    border-color: #607491;
+    border-color: #566375;
+}
+
+.btn-primary:hover {
+    background-color: #566375;
+}
