@@ -8,9 +8,9 @@ namespace CoworkingSpace.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController()
         {
-            _logger = logger;
+
         }
 
         public IActionResult Index()
@@ -19,6 +19,15 @@ namespace CoworkingSpace.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Prices()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }
